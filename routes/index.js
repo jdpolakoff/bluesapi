@@ -19,7 +19,7 @@ router.get('/api', function(req, res, next) {
           src: $(this).attr('mp3')
         }
       } else {
-        return null
+        return
       }
       pods.push(pod)
     })
