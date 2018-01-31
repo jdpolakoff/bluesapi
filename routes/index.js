@@ -15,8 +15,8 @@ router.get('/api', function(req, res, next) {
     buttons.each(function(button){
       if ($(this).attr('title').indexOf('Blues') !== -1) {
         var pod = {
-          title: $(this).attr('title'),
-          mp3: $(this).attr('mp3')
+          name: $(this).attr('title'),
+          src: $(this).attr('mp3')
         }
       } else {
         return null
