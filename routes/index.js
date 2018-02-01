@@ -6,7 +6,7 @@ var cheerio = require('cheerio')
 /* GET home page. */
 router.get('/api', function(req, res, next) {
 
-  var url = 'http://archive.wpfwfm.org/'
+  var url = 'https://archive.wpfwfm.org/'
 
   request(url, function(err, resp, body){
     var $ = cheerio.load(body)
